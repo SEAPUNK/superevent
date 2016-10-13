@@ -1,0 +1,31 @@
+There are two kinds of event publishing:
+
+* Non-persistent event
+
+  Stored in memory. If the event system fails, it will not recover the event,
+  or its state.
+
+* Persistent event
+
+  Stored on disk. If the event system fails, it will recover the event, as well
+  as its state, and load it back into memory.
+
+---
+
+Q: What state is there for an event?
+
+---
+
+Two kinds of event subscription:
+
+* Non-persistent subscription
+
+  Stored in memory. If the event is 
+
+Two kinds of event acknowledgement:
+
+* Receive acknowledgement
+
+  An event is considered done as soon as 
+
+* Finish acknowledgement
